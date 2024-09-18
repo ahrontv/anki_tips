@@ -1,0 +1,13 @@
+<!-- Anki provides a way to use tts but when the tts does not work eg the specific 
+     voice is not on the device it shows an ugly string. It is desired to hide this.-->
+
+<div id='tss-container'>[anki:tts lang=pt_BR voices=Microsoft_Maria,Microsoft_Daniel ]
+ {{Example Sentence}}
+[/anki:tts]</div>
+
+<script>
+  // Hides the TTS element if it is not working
+  var ttsEle = document.getElementById('tss-container');
+  if(ttsEle.textContent.includes("[anki:tts")){
+    ttsEle.style.display = 'none';};
+</script>
