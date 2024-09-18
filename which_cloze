@@ -1,0 +1,10 @@
+<!-- Identify which cloze card you are on so you can set specific behaviours. -->
+<script>
+  var clozeInd;
+  {{#c1}}clozeInd=1;{{/c1}}
+  {{#c2}}clozeInd=2;{{/c2}}
+  {{#c3}}clozeInd=3;{{/c3}}
+  {{#c4}}clozeInd=4;{{/c4}}
+</script>
+
+<!-- Alt. use different scripts within the field replacements -->
